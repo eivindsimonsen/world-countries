@@ -1,3 +1,44 @@
 body {
   box-sizing: border-box;
+  font-family: $fontFamily;
+  margin: 0px;
+  background-color: $lightModeBackground;
+}
+
+nav {
+  box-shadow: $lightModeBackgroundShadow;
+  background-color: $lightModeElements;
+}
+
+.container {
+  margin: 0px 5vw;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .theme-toggler {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-weight: 600;
+
+    .fa-moon {
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      transform: rotate(-35deg);
+    }
+
+    @media (min-width: 800px) {
+      gap: 20px;
+    }
+  }
+}
+
+h1 {
+  font-weight: 800;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  margin: 1.3rem 0;
 }
