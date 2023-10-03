@@ -1,4 +1,8 @@
+// import { useDataHandler } from "../context/handleDataContext";
+
 function Filter() {
-  return <div>Filter</div>;
+  // const { filterCategory, setFilterCategory } = useDataHandler();
+
+  return <>Filter</>;
 }
 export default Filter;
