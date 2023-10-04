@@ -1,6 +1,5 @@
 nav {
-  box-shadow: $lightModeBackgroundShadow;
-  background-color: $lightModeElements;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -14,14 +13,11 @@ nav {
   .theme-toggler {
     display: flex;
     align-items: center;
-
     gap: 10px;
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-    font-weight: 600;
-
+    font-weight: 700;
     background-color: transparent;
     border: none;
-    font-weight: initial;
 
     .fa-moon {
       font-size: clamp(1.2rem, 2.5vw, 1.5rem);
