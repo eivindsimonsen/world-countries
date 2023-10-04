@@ -1,8 +1,7 @@
 import "./sass/style.scss";
 import Cards from "./components/Cards";
-import Filter from "./components/Filter";
 import Navigation from "./components/Navigation";
-import Searchbar from "./components/Searchbar";
+import Filtering from "./components/filtering/Filtering";
 import { DataProvider } from "./context/handleDataContext";
 
 function App() {
@@ -10,8 +9,7 @@ function App() {
     <DataProvider>
       <main>
         <Navigation />
-        <Searchbar />
-        <Filter />
+        <Filtering />
         <Cards />
       </main>
     </DataProvider>
