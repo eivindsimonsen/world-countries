@@ -7,8 +7,10 @@ import { DataProvider } from "./context/handleDataContext";
 function App() {
   return (
     <DataProvider>
-      <main>
+      <header>
         <Navigation />
+      </header>
+      <main className="container">
         <Filtering />
         <Cards />
       </main>
