@@ -4,3 +4,26 @@ body {
   margin: 0px;
   background-color: $lightModeBackground;
 }
+
+body,
+button,
+h1,
+input,
+nav {
+  color: $lightModeText;
+  font-family: $fontFamily;
+}
+
+.searchbar,
+nav,
+.region-btn,
+ul {
+  background-color: $lightModeElements;
+}
+
+.searchbar,
+nav,
+.region-btn,
+.region-list {
+  box-shadow: $lightModeBackgroundShadow;
+}
