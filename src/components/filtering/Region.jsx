@@ -2,6 +2,6 @@
 
 function Region() {
   // const { filterCategory, setFilterCategory } = useDataHandler();
-  return <>Filter</>;
+  return <div>Filter</div>;
 }
 export default Region;

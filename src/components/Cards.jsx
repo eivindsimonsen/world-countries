@@ -1,4 +1,4 @@
 function Card() {
-  return <div>Card</div>;
+  return <section className="cards">Card</section>;
 }
 export default Card;

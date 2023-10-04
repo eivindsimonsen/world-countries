@@ -3,10 +3,10 @@ import Searchbar from "./Searchbar";
 
 function Filtering() {
   return (
-    <div className="filtering container">
+    <section className="filtering">
       <Searchbar />
       <Region />
-    </div>
+    </section>
   );
 }
 export default Filtering;
