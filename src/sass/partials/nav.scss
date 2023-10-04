@@ -19,6 +19,10 @@ nav {
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
     font-weight: 600;
 
+    background-color: transparent;
+    border: none;
+    font-weight: initial;
+
     .fa-moon {
       font-size: clamp(1.2rem, 2.5vw, 1.5rem);
       transform: rotate(-35deg);

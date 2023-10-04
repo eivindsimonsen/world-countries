@@ -3,10 +3,10 @@ function Navigation() {
     <nav>
       <div className="container nav-items">
         <h1>Where in the world?</h1>
-        <div className="theme-toggler">
+        <button className="theme-toggler">
           <i className="fa-regular fa-moon"></i>
           <p>Dark Mode</p>
-        </div>
+        </button>
       </div>
     </nav>
   );
