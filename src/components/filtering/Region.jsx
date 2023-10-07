@@ -24,11 +24,31 @@ function Region() {
         <i className="fa-solid fa-chevron-down"></i>
       </button>
       <ul className={"region-list " + (active ? "active " : "") + (toggleTheme ? "darkMode" : "")}>
-        <li onClick={setRegion}>Africa</li>
-        <li onClick={setRegion}>America</li>
-        <li onClick={setRegion}>Asia</li>
-        <li onClick={setRegion}>Europe</li>
-        <li onClick={setRegion}>Oceania</li>
+        <li
+          className={toggleTheme ? "darkMode" : ""}
+          onClick={setRegion}>
+          Africa
+        </li>
+        <li
+          className={toggleTheme ? "darkMode" : ""}
+          onClick={setRegion}>
+          America
+        </li>
+        <li
+          className={toggleTheme ? "darkMode" : ""}
+          onClick={setRegion}>
+          Asia
+        </li>
+        <li
+          className={toggleTheme ? "darkMode" : ""}
+          onClick={setRegion}>
+          Europe
+        </li>
+        <li
+          className={toggleTheme ? "darkMode" : ""}
+          onClick={setRegion}>
+          Oceania
+        </li>
       </ul>
     </div>
   );

@@ -4,12 +4,12 @@
   grid-template-columns: repeat(1, 1fr);
   max-width: 280px;
   margin: 0px auto;
+  gap: 60px;
 
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
     margin: 0px;
     max-width: 100%;
-    gap: 60px;
   }
 
   @media (min-width: 907px) {
