@@ -1,8 +1,12 @@
 import { useDataHandler } from "../context/handleDataContext";
 
 function Card() {
-  const { filterCategory } = useDataHandler();
+  const { filterCategory, searchValue } = useDataHandler();
 
-  return <section className="cards">{filterCategory}</section>;
+  return (
+    <section className="cards">
+      {filterCategory} | {searchValue}
+    </section>
+  );
 }
 export default Card;
