@@ -17,13 +17,14 @@ nav {
 .searchbar,
 nav,
 .region-btn,
-ul {
+ul,
+.card {
   background-color: $lightModeElements;
 }
 
 .searchbar,
 nav,
 .region-btn,
-.region-list {
+.card {
   box-shadow: $lightModeBackgroundShadow;
 }
