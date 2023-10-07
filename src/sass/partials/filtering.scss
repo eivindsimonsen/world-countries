@@ -1,6 +1,12 @@
 .filtering {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: 907px) {
+    flex-direction: row;
+  }
 }
 
 .searchbar,
@@ -12,7 +18,7 @@
 // searchbar
 .searchbar {
   padding: 0px 40px;
-  width: 400px;
+  max-width: 400px;
   height: 55px;
   display: flex;
   align-items: center;
@@ -21,6 +27,10 @@
 
   .fa-magnifying-glass {
     font-size: 1.2rem;
+  }
+
+  @media (min-width: 907px) {
+    width: 400px;
   }
 
   input {
@@ -69,6 +79,7 @@
     padding: 0px 20px;
     overflow: hidden;
     height: 0;
+    width: 170px;
 
     li {
       margin: 5px 0;
