@@ -1,5 +1,6 @@
 // import { useDataHandler } from "../context/handleDataContext";
 import { useTheme } from "../context/handleThemeContext";
+import { Link } from "react-router-dom";
 
 function Card() {
   // const { filterCategory, searchValue } = useDataHandler();
@@ -7,7 +8,9 @@ function Card() {
 
   return (
     <section className="card-container">
-      <div className={"card " + (toggleTheme ? "darkMode" : "")}>
+      <Link
+        to="details/23"
+        className={"card " + (toggleTheme ? "darkMode" : "")}>
         <img
           src="https://flagcdn.com/w320/no.png"
           alt="test"
@@ -24,7 +27,7 @@ function Card() {
             <span>Capital:</span> Oslo
           </p>
         </div>
-      </div>
+      </Link>
       <div className={"card " + (toggleTheme ? "darkMode" : "")}>
         <img
           src="https://flagcdn.com/w320/no.png"

@@ -1,9 +1,10 @@
 import "./sass/style.scss";
-import Cards from "./components/Cards";
+import Index from "./components/Index";
 import Navigation from "./components/Navigation";
-import Filtering from "./components/filtering/Filtering";
+import Details from "./components/Details";
 import { useTheme } from "./context/handleThemeContext";
 import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const { toggleTheme } = useTheme();
@@ -25,10 +26,16 @@ function App() {
       <header>
         <Navigation />
       </header>
-      <main className="container">
-        <Filtering />
-        <Cards />
-      </main>
+      <Routes>
+        <Route
+          path="/"
+          element={<Index />}
+        />
+        <Route
+          path="/details/:id"
+          element={<Details />}
+        />
+      </Routes>
     </>
   );
 }

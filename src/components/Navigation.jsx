@@ -1,4 +1,5 @@
 import { useTheme } from "../context/handleThemeContext";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const { toggleTheme, setToggleTheme } = useTheme();
@@ -6,7 +7,9 @@ function Navigation() {
   return (
     <nav className={toggleTheme ? "darkMode" : ""}>
       <div className="container nav-items">
-        <h1 className={toggleTheme ? "darkMode" : ""}>Where in the world?</h1>
+        <Link to="/">
+          <h1 className={toggleTheme ? "darkMode" : ""}>Where in the world?</h1>
+        </Link>
         <button
           onClick={() => setToggleTheme(!toggleTheme)}
           className={"theme-toggler" + (toggleTheme ? " darkMode" : "")}>
