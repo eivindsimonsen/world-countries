@@ -46,9 +46,10 @@
   position: relative;
 
   &-btn {
+    cursor: pointer;
     font-weight: 600;
     font-size: 0.9rem;
-    width: 200px;
+    width: 210px;
     height: 55px;
     border: none;
     display: flex;
@@ -64,11 +65,32 @@
     left: 0;
     right: 0;
     top: 44px;
-    padding: 5px 20px;
     list-style-type: none;
+    padding: 0px 20px;
+    overflow: hidden;
+    height: 0;
 
     li {
-      margin: 10px 0;
+      margin: 5px 0;
+      padding: 5px 0px;
+      cursor: pointer;
+      &:hover {
+        background-color: $lightModeBackground;
+        box-shadow: 0 0 0 100vmax $lightModeBackground;
+        -webkit-clip-path: inset(0 -100vmax);
+        clip-path: inset(0 -100vmax);
+      }
     }
+  }
+}
+
+.active {
+  animation: showList 1s ease forwards;
+}
+
+@keyframes showList {
+  100% {
+    height: 200px;
+    padding: 5px 20px;
   }
 }
