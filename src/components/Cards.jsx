@@ -1,4 +1,8 @@
+import { useDataHandler } from "../context/handleDataContext";
+
 function Card() {
-  return <section className="cards">Card</section>;
+  const { filterCategory } = useDataHandler();
+
+  return <section className="cards">{filterCategory}</section>;
 }
 export default Card;
