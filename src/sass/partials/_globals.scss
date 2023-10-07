@@ -2,16 +2,35 @@ body {
   box-sizing: border-box;
   font-family: $fontFamily;
   margin: 0px;
+}
+
+button,
+h1,
+input,
+nav {
+  font-family: $fontFamily;
+}
+
+body {
   background-color: $lightModeBackground;
+
+  &.darkMode {
+    background-color: $darkModeBackground;
+  }
 }
 
 body,
 button,
 h1,
 input,
-nav {
+nav,
+.region-list,
+.card {
   color: $lightModeText;
-  font-family: $fontFamily;
+
+  &.darkMode {
+    color: $darkModeText;
+  }
 }
 
 .searchbar,
@@ -20,6 +39,10 @@ nav,
 ul,
 .card {
   background-color: $lightModeElements;
+
+  &.darkMode {
+    background-color: $darkModeElements;
+  }
 }
 
 .searchbar,
@@ -27,4 +50,8 @@ nav,
 .region-btn,
 .card {
   box-shadow: $lightModeBackgroundShadow;
+
+  &.darkMode {
+    box-shadow: $darkModeBackgroundShadow;
+  }
 }

@@ -1,11 +1,13 @@
 // import { useDataHandler } from "../context/handleDataContext";
+import { useTheme } from "../context/handleThemeContext";
 
 function Card() {
   // const { filterCategory, searchValue } = useDataHandler();
+  const { toggleTheme } = useTheme();
 
   return (
     <section className="card-container">
-      <div className="card">
+      <div className={"card " + (toggleTheme ? "darkMode" : "")}>
         <img
           src="https://flagcdn.com/w320/no.png"
           alt="test"
@@ -23,7 +25,7 @@ function Card() {
           </p>
         </div>
       </div>
-      <div className="card">
+      <div className={"card " + (toggleTheme ? "darkMode" : "")}>
         <img
           src="https://flagcdn.com/w320/no.png"
           alt="test"
@@ -41,7 +43,7 @@ function Card() {
           </p>
         </div>
       </div>
-      <div className="card">
+      <div className={"card " + (toggleTheme ? "darkMode" : "")}>
         <img
           src="https://flagcdn.com/w320/no.png"
           alt="test"
@@ -59,7 +61,7 @@ function Card() {
           </p>
         </div>
       </div>
-      <div className="card">
+      <div className={"card " + (toggleTheme ? "darkMode" : "")}>
         <img
           src="https://flagcdn.com/w320/no.png"
           alt="test"

@@ -25,6 +25,10 @@
   column-gap: 20px;
   color: $lightModeInput;
 
+  &.darkMode {
+    color: $darkModeText;
+  }
+
   .fa-magnifying-glass {
     font-size: 1.2rem;
   }
@@ -43,6 +47,10 @@
     &::placeholder {
       color: $lightModeInput;
       font-size: 1rem;
+    }
+
+    &.darkMode::placeholder {
+      color: $darkModeText;
     }
 
     &:focus-visible {
