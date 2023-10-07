@@ -14,7 +14,7 @@ function Navigation() {
           onClick={() => setToggleTheme(!toggleTheme)}
           className={"theme-toggler" + (toggleTheme ? " darkMode" : "")}>
           <i className={toggleTheme ? "fa-solid fa-moon" : "fa-regular fa-moon"}></i>
-          Dark Mode
+          {toggleTheme ? "Light Mode" : "Dark Mode"}
         </button>
       </div>
     </nav>
