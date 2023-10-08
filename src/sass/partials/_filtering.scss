@@ -24,11 +24,7 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
-  color: $lightModeInput;
-
-  &.darkMode {
-    color: $darkModeText;
-  }
+  color: var(--input);
 
   .fa-magnifying-glass {
     font-size: 1.2rem;
@@ -46,12 +42,8 @@
     height: inherit;
 
     &::placeholder {
-      color: $lightModeInput;
+      color: var(--input);
       font-size: 1rem;
-    }
-
-    &.darkMode::placeholder {
-      color: $darkModeText;
     }
 
     &:focus-visible {
@@ -95,16 +87,9 @@
       padding: 5px 0px;
       cursor: pointer;
 
-      &.darkMode:hover {
-        background-color: $darkModeBackground;
-        box-shadow: 0 0 0 100vmax $darkModeBackground;
-        -webkit-clip-path: inset(0 -100vmax);
-        clip-path: inset(0 -100vmax);
-      }
-
       &:hover {
-        background-color: $lightModeBackground;
-        box-shadow: 0 0 0 100vmax $lightModeBackground;
+        background-color: var(--bg);
+        box-shadow: 0 0 0 100vmax var(--bg);
         -webkit-clip-path: inset(0 -100vmax);
         clip-path: inset(0 -100vmax);
       }

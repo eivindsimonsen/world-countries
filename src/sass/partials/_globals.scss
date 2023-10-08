@@ -1,7 +1,13 @@
+@import "./variables";
+
 body {
   box-sizing: border-box;
   font-family: $fontFamily;
   margin: 0px;
+}
+
+.darkMode {
+  background-color: var(--dark-bg);
 }
 
 a {
@@ -16,11 +22,7 @@ nav {
 }
 
 body {
-  background-color: $lightModeBackground;
-
-  &.darkMode {
-    background-color: $darkModeBackground;
-  }
+  background-color: var(--bg);
 }
 
 body,
@@ -30,11 +32,7 @@ input,
 nav,
 .region-list,
 .card {
-  color: $lightModeText;
-
-  &.darkMode {
-    color: $darkModeText;
-  }
+  color: var(--text);
 }
 
 .searchbar,
@@ -42,20 +40,12 @@ nav,
 .region-btn,
 ul,
 .card {
-  background-color: $lightModeElements;
-
-  &.darkMode {
-    background-color: $darkModeElements;
-  }
+  background-color: var(--elements);
 }
 
 .searchbar,
 nav,
 .region-btn,
 .card {
-  box-shadow: $lightModeBackgroundShadow;
-
-  &.darkMode {
-    box-shadow: $darkModeBackgroundShadow;
-  }
+  box-shadow: var(--shadows);
 }

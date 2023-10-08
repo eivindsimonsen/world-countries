@@ -14,7 +14,7 @@ function App() {
     const body = document.body;
 
     // Toggle the theme based on the state
-    if (toggleTheme) {
+    if (toggleTheme === "dark") {
       body.classList.add("darkMode");
     } else {
       body.classList.remove("darkMode");
@@ -22,7 +22,7 @@ function App() {
   }, [toggleTheme]);
 
   return (
-    <>
+    <div data-theme={toggleTheme}>
       <header>
         <Navigation />
       </header>
@@ -36,7 +36,7 @@ function App() {
           element={<Details />}
         />
       </Routes>
-    </>
+    </div>
   );
 }
 export default App;
