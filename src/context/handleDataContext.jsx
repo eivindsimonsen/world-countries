@@ -4,7 +4,7 @@ const dataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const [searchValue, setSearchValue] = useState("");
-  const [filterCategory, setFilterCategory] = useState("all"); // Default value
+  const [filterCategory, setFilterCategory] = useState(""); // Default value
 
   return <dataContext.Provider value={{ searchValue, setSearchValue, filterCategory, setFilterCategory }}>{children}</dataContext.Provider>;
 };
