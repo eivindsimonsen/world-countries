@@ -16,7 +16,7 @@ function Card() {
 
         const jsonData = await response.json();
 
-        // Apply filters based on searchValue and filterCategory
+        // Apply filters based on searchValue and filterCategory. If none are provided, display the entire dataset
         const filteredData = jsonData.filter((country) => {
           const nameMatches = searchValue ? country.name.toLowerCase().includes(searchValue.toLowerCase()) : true;
           const regionMatches = filterCategory ? country.region.toLowerCase() === filterCategory.toLowerCase() : true;
