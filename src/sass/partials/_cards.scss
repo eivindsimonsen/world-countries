@@ -31,7 +31,13 @@
 
   img {
     width: 100%;
+    height: 180px;
     border-radius: 10px 10px 0px 0px;
+    object-fit: fill;
+
+    @media (min-width: 698px) {
+      height: 220px;
+    }
   }
 
   & > *:not(img) {
