@@ -501,64 +501,6 @@
     "independent": false
   },
   {
-    "name": "Antarctica",
-    "topLevelDomain": [".aq"],
-    "alpha2Code": "AQ",
-    "alpha3Code": "ATA",
-    "callingCodes": ["672"],
-    "subregion": "Antarctica",
-    "region": "Polar",
-    "population": 1000,
-    "latlng": [-74.65, 4.48],
-    "demonym": "Antarctic",
-    "area": 14000000,
-    "timezones": [
-      "UTC-03:00",
-      "UTC+03:00",
-      "UTC+05:00",
-      "UTC+06:00",
-      "UTC+07:00",
-      "UTC+08:00",
-      "UTC+10:00",
-      "UTC+12:00"
-    ],
-    "nativeName": "Antarctica",
-    "numericCode": "010",
-    "flags": {
-      "svg": "https://flagcdn.com/aq.svg",
-      "png": "https://flagcdn.com/w320/aq.png"
-    },
-    "languages": [
-      {
-        "iso639_1": "en",
-        "iso639_2": "eng",
-        "name": "English",
-        "nativeName": "English"
-      },
-      {
-        "iso639_1": "ru",
-        "iso639_2": "rus",
-        "name": "Russian",
-        "nativeName": "Русский"
-      }
-    ],
-    "translations": {
-      "br": "Antarktika",
-      "pt": "Antárctida",
-      "nl": "Antarctica",
-      "hr": "Antarktika",
-      "fa": "جنوبگان",
-      "de": "Antarktika",
-      "es": "Antártida",
-      "fr": "Antarctique",
-      "ja": "南極大陸",
-      "it": "Antartide",
-      "hu": "Antarktisz"
-    },
-    "flag": "https://flagcdn.com/aq.svg",
-    "independent": false
-  },
-  {
     "name": "Antigua and Barbuda",
     "topLevelDomain": [".ag"],
     "alpha2Code": "AG",
