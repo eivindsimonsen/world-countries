@@ -26,8 +26,6 @@ function Card() {
     fetchData();
   }, []);
 
-  console.log(data);
-
   return (
     <section className="card-container">
       {data &&
