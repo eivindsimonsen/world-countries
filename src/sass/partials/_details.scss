@@ -88,11 +88,11 @@ article {
 
   & .border-countries {
     flex-basis: 30%;
-    max-width: 130px;
+    max-width: fit-content;
     border-radius: 5px;
     display: block;
     text-align: center;
-    padding: 5px 0px;
+    padding: 7px 10px;
     margin-right: 0;
   }
 }
