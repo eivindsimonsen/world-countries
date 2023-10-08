@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function Region() {
   const [active, setActive] = useState(false);
-  const { setFilterCategory } = useDataHandler();
+  const { filterCategory, setFilterCategory } = useDataHandler();
 
   const toggleList = () => {
     setActive(!active);
@@ -13,17 +13,22 @@ function Region() {
     setFilterCategory(event.target.innerText);
   };
 
+  const resetRegion = () => {
+    setFilterCategory("");
+  };
+
   return (
     <div className="region">
       <button
         onClick={toggleList}
         className="region-btn ">
-        Filter by Region
+        {filterCategory === "" ? "Filter by Region" : filterCategory}
         <i className="fa-solid fa-chevron-down"></i>
       </button>
       <ul className={"region-list " + (active ? "active " : "")}>
+        <li onClick={resetRegion}>All Regions</li>
         <li onClick={setRegion}>Africa</li>
-        <li onClick={setRegion}>America</li>
+        <li onClick={setRegion}>Americas</li>
         <li onClick={setRegion}>Asia</li>
         <li onClick={setRegion}>Europe</li>
         <li onClick={setRegion}>Oceania</li>
