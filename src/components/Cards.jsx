@@ -39,8 +39,6 @@ function Card() {
     return <h2 style={{ color: "white", whiteSpace: "nowrap" }}>Loading...</h2>;
   }
 
-  console.log(data);
-
   return (
     <section className="card-container">
       {data?.length > 0 ? (

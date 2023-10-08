@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+// npm package which formats numbers
 import iso from "iso-3166-1";
 
 function Details() {
