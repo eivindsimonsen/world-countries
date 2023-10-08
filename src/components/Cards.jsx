@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 function Card() {
   const { filterCategory, searchValue } = useDataHandler();
   const [data, setData] = useState(null);
-  console.log(filterCategory);
-  console.log(searchValue);
 
   useEffect(() => {
     const fetchData = async () => {
