@@ -61,7 +61,7 @@ function Details() {
                 <span>Native Name: </span> {countryData.nativeName}
               </p>
               <p>
-                <span>Population: </span> {countryData.population}
+                <span>Population: </span> {countryData.population.toLocaleString()}
               </p>
               <p>
                 <span>Region: </span> {countryData.region}
