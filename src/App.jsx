@@ -32,7 +32,7 @@ function App() {
           element={<Index />}
         />
         <Route
-          path="/details/:id"
+          path="/details/:numericCode"
           element={<Details />}
         />
       </Routes>
