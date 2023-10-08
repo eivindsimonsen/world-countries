@@ -17,18 +17,33 @@ function Card() {
         }
 
         const jsonData = await response.json();
-        setData(jsonData);
+
+        // Apply filters based on searchValue and filterCategory
+        const filteredData = jsonData.filter((country) => {
+          const nameMatches = searchValue ? country.name.toLowerCase().includes(searchValue.toLowerCase()) : true;
+          const regionMatches = filterCategory ? country.region.toLowerCase() === filterCategory.toLowerCase() : true;
+
+          return nameMatches && regionMatches;
+        });
+
+        setData(filteredData);
       } catch (error) {
         console.error("Error fetching or parsing data:", error);
       }
     };
 
     fetchData();
-  }, []);
+  }, [searchValue, filterCategory]);
+
+  if (data === null) {
+    return <h2 style={{ color: "white", whiteSpace: "nowrap" }}>Loading...</h2>;
+  }
+
+  console.log(data);
 
   return (
     <section className="card-container">
-      {data &&
+      {data?.length > 0 ? (
         data.map((country, index) => (
           <Link
             to={`details/${country.numericCode}`}
@@ -51,7 +66,10 @@ function Card() {
               </p>
             </div>
           </Link>
-        ))}
+        ))
+      ) : (
+        <h2 style={{ color: "white", whiteSpace: "nowrap" }}>Country does not exist in this region</h2>
+      )}
     </section>
   );
 }
