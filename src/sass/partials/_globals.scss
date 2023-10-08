@@ -10,8 +10,20 @@ body {
   background-color: var(--dark-bg);
 }
 
+.container {
+  margin: 0px 5vw;
+}
+
+main {
+  padding-bottom: 100px;
+}
+
 a {
   text-decoration: none;
+}
+
+span {
+  font-weight: 800;
 }
 
 button,
@@ -32,7 +44,8 @@ input,
 nav,
 .region-list,
 .card,
-.cta {
+.cta,
+article {
   color: var(--text);
 }
 
@@ -49,6 +62,7 @@ ul,
 nav,
 .region-btn,
 .card,
-.cta {
+.cta,
+article img {
   box-shadow: var(--shadows);
 }

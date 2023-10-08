@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   max-width: 280px;
-  margin: 0px auto 100px auto;
+  margin: 0px auto;
   gap: 60px;
 
   @media (min-width: 640px) {
@@ -36,7 +36,7 @@
 
   & > *:not(img) {
     padding: 0px 30px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   h2 {
@@ -47,10 +47,6 @@
   &-facts {
     p {
       margin: 5px 0px;
-    }
-
-    span {
-      font-weight: 800;
     }
   }
 }

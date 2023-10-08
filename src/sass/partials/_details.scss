@@ -10,3 +10,55 @@
   font-size: 1rem;
   font-weight: 600;
 }
+
+article {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  margin-top: 70px;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  flex-direction: column;
+  font-weight: 200;
+
+  span {
+    font-weight: 500;
+    margin-right: 5px;
+  }
+
+  @media (min-width: 857px) {
+    flex-direction: row;
+  }
+
+  & > * {
+    flex-basis: 50%;
+  }
+
+  img {
+    width: 100%;
+    height: fit-content;
+
+    @media (min-width: 857px) {
+      width: 110px;
+    }
+  }
+
+  h2 {
+    font-size: clamp(2rem, 2.5vw, 2.8rem);
+    margin: 40px 0px 10px 0px;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-first-block {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1536px) {
+      gap: 80px;
+      flex-direction: row;
+    }
+  }
+}
