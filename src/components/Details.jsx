@@ -84,7 +84,9 @@ function Details() {
               </p>
               <p>
                 <span>Languages: </span>
-                {countryData.languages[0].nativeName}
+                {countryData.languages.map((lang, index) => (
+                  <div key={index}>{lang.name}</div>
+                ))}
               </p>
             </div>
           </section>
