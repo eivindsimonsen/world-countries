@@ -32,7 +32,7 @@ function App() {
           element={<Index />}
         />
         <Route
-          path="/details/:numericCode"
+          path="/details/:alpha3Code"
           element={<Details />}
         />
       </Routes>

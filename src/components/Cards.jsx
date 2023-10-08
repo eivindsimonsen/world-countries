@@ -42,7 +42,7 @@ function Card() {
       {data?.length > 0 ? (
         data.map((country, index) => (
           <Link
-            to={`details/${country.numericCode}`}
+            to={`details/${country.alpha3Code}`}
             className="card "
             key={index}>
             <img

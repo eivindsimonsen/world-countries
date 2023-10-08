@@ -4,13 +4,13 @@ import { useState, useEffect } from "react";
 import iso from "iso-3166-1";
 
 function Details() {
-  const { numericCode } = useParams();
+  let { alpha3Code } = useParams();
   const [countryData, setCountryData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        if (!numericCode) {
+        if (!alpha3Code) {
           // Handle the case where numericCode is undefined
           console.error("Numeric code is undefined");
           return;
@@ -22,10 +22,10 @@ function Details() {
         }
 
         const jsonData = await response.json();
-        const country = jsonData.find((c) => c.numericCode === numericCode);
+        const country = jsonData.find((c) => c.alpha3Code === alpha3Code);
 
         if (!country) {
-          throw new Error(`Country with numericCode ${numericCode} not found`);
+          throw new Error(`Country with alpha3Code ${alpha3Code} not found`);
         }
 
         setCountryData(country);
@@ -35,7 +35,7 @@ function Details() {
     };
 
     fetchData();
-  }, [numericCode]);
+  }, [alpha3Code]);
 
   if (!countryData) {
     return <h2 style={{ color: "white", whiteSpace: "nowrap" }}>Loading...</h2>;
