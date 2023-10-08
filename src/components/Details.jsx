@@ -38,7 +38,7 @@ function Details() {
   }, [numericCode]);
 
   if (!countryData) {
-    return <div>Loading...</div>;
+    return <h2 style={{ color: "white", whiteSpace: "nowrap" }}>Loading...</h2>;
   }
 
   return (
