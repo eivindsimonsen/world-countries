@@ -1,10 +1,14 @@
 import { useDataHandler } from "../../context/handleDataContext";
 
 function Searchbar() {
-  const { setSearchValue } = useDataHandler();
+  const { searchValue, setSearchValue } = useDataHandler();
 
   const getValue = (e) => {
     setSearchValue(e.target.value);
+  };
+
+  const removeValue = () => {
+    setSearchValue("");
   };
 
   return (
@@ -15,7 +19,12 @@ function Searchbar() {
         name="searchbar"
         placeholder="Search for a country..."
         onChange={getValue}
+        value={searchValue}
       />
+      <i
+        onClick={removeValue}
+        style={{ cursor: "pointer" }}
+        className="fa-solid fa-x"></i>
     </div>
   );
 }
