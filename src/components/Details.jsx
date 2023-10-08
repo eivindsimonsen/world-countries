@@ -93,11 +93,11 @@ function Details() {
             </p>
             <div className="details-second-block-borders">
               {countryData.borders ? (
-                countryData.borders.map((borderCode, index) => (
+                countryData.borders?.map((borderCode, index) => (
                   <span
                     key={index}
                     className="border-countries">
-                    {iso.whereAlpha3(`${borderCode}`).country}
+                    {iso.whereAlpha3(`${borderCode}`)?.country || borderCode}
                   </span>
                 ))
               ) : (
