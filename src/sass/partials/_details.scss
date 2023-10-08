@@ -61,4 +61,37 @@ article {
       flex-direction: row;
     }
   }
+
+  &-second-block {
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+    flex-direction: column;
+
+    @media (min-width: 1273px) {
+      flex-direction: row;
+    }
+
+    & p:first-of-type {
+      margin-right: 10px;
+    }
+
+    &-borders {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+
+      flex-wrap: wrap;
+    }
+  }
+
+  & .border-countries {
+    flex-basis: 30%;
+    max-width: 130px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    padding: 5px 0px;
+    margin-right: 0;
+  }
 }

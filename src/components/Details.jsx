@@ -47,11 +47,13 @@ function Details() {
           </section>
           <section className="details-second-block">
             <p>
-              <span>Border Countries</span>
+              <span>Border Countries: </span>
+            </p>
+            <div className="details-second-block-borders">
               <span className="border-countries">Sweden</span>
               <span className="border-countries">Finland</span>
               <span className="border-countries">Russia</span>
-            </p>
+            </div>
           </section>
         </section>
       </article>
