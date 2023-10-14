@@ -24,6 +24,10 @@
   @media (min-width: 1577px) {
     gap: 90px;
   }
+
+  @media (min-width: 2000px) {
+    gap: 90px;
+  }
 }
 
 .card {
@@ -37,6 +41,10 @@
 
     @media (min-width: 698px) {
       height: 220px;
+    }
+
+    @media (min-width: 2300px) {
+      height: 310px;
     }
   }
 
